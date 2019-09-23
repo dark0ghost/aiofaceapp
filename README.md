@@ -18,6 +18,7 @@ When I wrote this module I looked at https://github.com/reloadlife/FaceApp-py(th
 	```cd faceapp && python setup.py install```
 
 ## How to use:
+```
 import aiofaceapp
 import asyncio
 import aiohttp
@@ -34,6 +35,7 @@ def task() -> None:
  b = await f.make_img(code, filters[3])
  image = Image.open(io.BytesIO(b))
  image.save('./img/'+str(code)+str(filters[n])+'.png')
+ ```
  
  
   
